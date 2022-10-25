@@ -43,7 +43,7 @@ function Createstudent() {
         },
         onSubmit: async (values) => {
             try {
-                const students = await axios.post("https://634d24beacb391d34a9511f4.mockapi.io/admin/student",
+                const students = await axios.post("https://634d24d5f5d2cc648e9da680.mockapi.io/admin/student",
                     values);
                 alert("sucess")
 
