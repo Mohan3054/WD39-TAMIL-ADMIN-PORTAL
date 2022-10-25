@@ -175,7 +175,7 @@ function Topbar() {
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                 <img class="img-profile rounded-circle"
-                    src="img/undraw_profile.svg"/>
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgCIoKxXZss5sCIP3jHf-fWgBE9y5M3wKLRg&usqp=CAU"/>
             </a>
            
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
