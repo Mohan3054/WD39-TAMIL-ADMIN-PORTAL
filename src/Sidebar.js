@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import SchoolIcon from '@mui/icons-material/School';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 function Sidebar() {
     return (
 
@@ -32,7 +35,7 @@ function Sidebar() {
 
                 {/* <!-- Heading --> */}
                 <div class="sidebar-heading">
-                    Interface
+                    User Interface
                 </div>
 
                 {/* <!-- Nav Item - Pages Collapse Menu --> */}
@@ -42,31 +45,40 @@ function Sidebar() {
                         <i class="fas fa-fw fa-cog"></i>
                         <span>Users</span>
                     </Link>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                        <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">Custom Components:</h6>
-                            <a class="collapse-item" href="buttons.html">Buttons</a>
-                            <a class="collapse-item" href="cards.html">Cards</a>
-                        </div>
-                    </div>
+
 
                 </li>
+                {/* <!-- Divider --> */}
+                <hr class="sidebar-divider" />
+                {/* <!-- Heading --> */}
+                <div class="sidebar-heading">
+                    {/* Interface */}<SchoolIcon />Teacher & Student Management
+                </div>
                 <li class="nav-item">
                     <Link to={"/student/Student"} class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                         aria-expanded="true" aria-controls="collapseUtilities">
-                        {/* <i class="fas fa-fw fa-wrench"></i> */}
-                        <SchoolIcon />
-                        <span>Teacher & Student Management</span>
-                    </Link>
-                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                        data-parent="#accordionSidebar">
-                        <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">Custom Utilities:</h6>
-                            <a class="collapse-item" href="utilities-color.html">Colors</a>
-                            <a class="collapse-item" href="utilities-border.html">Borders</a>
 
-                        </div>
-                    </div>
+                        <AccountCircleIcon />
+                        <span>SAI MOHAN</span>
+                    </Link>
+
+                </li>
+                {/* <!-- Divider --> */}
+                <hr class="sidebar-divider" />
+
+                {/* <!-- Heading --> */}
+                <div class="sidebar-heading">
+                    {/* Interface */}<LibraryBooksIcon />Library Mangement
+                </div>
+
+                <li class="nav-item">
+                    <Link to={"/Library/book"} class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                        aria-expanded="true" aria-controls="collapseUtilities">
+
+                        <LocalLibraryIcon />
+                        <span>Books</span>
+                    </Link>
+
                 </li>
 
 

@@ -16,6 +16,11 @@ import Student from './Student/Student';
 import Viewstudent from './Student/Viewstudent';
 import Editstudent from './Student/Editstudent';
 import Createstudent from './Student/Createstudent';
+import Books from './Library/Books';
+import Viewbooks from './Library/Viewbooks';
+import Editbooks from './Library/Editbooks';
+import Createbooks from './Library/Createbooks';
+
 
 function App() {
   return (
@@ -34,6 +39,10 @@ function App() {
               <Route path="/student/Student/:rollnumber" element={<Viewstudent/>}></Route>
             <Route path="/student/edit/:rollnumber" element={<Editstudent/>}></Route>
             <Route path="/student/create_student" element={<Createstudent/>}></Route>
+            <Route path="/Library/Book" element={<Books/>}></Route>
+            <Route path="/Library/Books/:isbn" element={<Viewbooks/>}></Route>
+            <Route path="/Library/edit/:isbn" element={<Editbooks/>}></Route>
+            <Route path="/Library/create_books" element={<Createbooks/>}></Route>
             </Routes>
             </div>
           <Footer></Footer>
